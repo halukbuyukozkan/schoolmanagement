@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FacultyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('tunahan');
+
+Route::resource('faculty', FacultyController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

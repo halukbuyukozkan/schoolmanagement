@@ -1,4 +1,5 @@
-<?php
+<?php php artisan make:controller FacultyController --resource
+
 
 namespace Haluk\School;
 
@@ -25,5 +26,5 @@ class Faculty{
         return $this->name;
     }
 
-    
+
 }
