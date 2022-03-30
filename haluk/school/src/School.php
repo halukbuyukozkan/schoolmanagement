@@ -20,10 +20,21 @@ class School{
         return $this;
     }
 
+    public function getName()
+    {
+        $this->name;
+    }
+
+
     public function setDescription(string $description): self
     {
         $this->description = $description;
         return $this;
+    }
+
+    public function getDescription()
+    {
+        $this->description;
     }
 
     public function setFaculty(array $faculties): self

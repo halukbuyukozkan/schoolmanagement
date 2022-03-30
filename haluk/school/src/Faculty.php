@@ -24,4 +24,6 @@ class Faculty{
     {
         return $this->name;
     }
+
+    
 }
