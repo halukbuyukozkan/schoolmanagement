@@ -7,14 +7,12 @@ use Illuminate\Http\Request;
 
 class FacultyController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return view('faculty');
+        $faculties = Faculty::all();
+        return view('faculty', compact('faculties'));
+
     }
 
     /**
@@ -35,7 +33,7 @@ class FacultyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

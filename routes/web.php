@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::resource('faculty', FacultyController::class);
+Route::resource('faculty', FacultyController::class)->middleware(['auth']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
